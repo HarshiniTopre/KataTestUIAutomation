@@ -147,15 +147,12 @@ public static WebElement dayAfterNextElement;
             String currentDateText = currentDate.format(formatter);
             String nextDayText = nextDay.format(formatter);
             String dayAfterNextText = dayAfterNext.format(formatter);
-           
 
             // Find elements for current date and next two dates
             WebElement currentDateElement = driver.findElement(By.xpath("//button[text()='" + currentDateText + "']"));
              nextDayElement = driver.findElement(By.xpath("//button[text()='" + nextDayText + "']"));
              dayAfterNextElement = driver.findElement(By.xpath("//button[text()='" + dayAfterNextText + "']"));
-           
 
-            
             // Use Actions class to perform click-and-hold, move, and release action
             Actions actions = new Actions(driver);
             actions.clickAndHold(currentDateElement)
@@ -167,50 +164,7 @@ public static WebElement dayAfterNextElement;
 
             System.out.println(nextDayElement.getText());
             System.out.println(dayAfterNextElement.getText());
-           
-//			Calendar calender=Calendar.getInstance();
-//			calender.add(Calendar.DATE, 2);
-//			//java.util.Date targateDate=calender.getTime();
-//			
-//			SimpleDateFormat dataFormat=new SimpleDateFormat("d");
-//			String day =dataFormat.format(targateDate);
-//			System.out.println("Formated date" + day);
-			
-			//idetified next two day
-//			TodayCanlenderBtn.click();
-//			Thread.sleep(500);
-			//NextMonthCalenderBtn.click();
-//			todaysDate.click();
-//			List<WebElement> nextTwoDays =calenderView.findElements(By.xpath("//button[@class='rbc-button-link' and not (contains(@class,'rbc-off-range'))]"));
-//			//Actions actions=new Actions(driver);
-//			nextTwoDays.get(0).click();
-//			nextTwoDays.get(1).click();
-			
-			
-			
-			//actions.clickAndHold(todaysDate).perform();
-			
-			
-//			int xOffset=nextTwoDays.get(0).getLocation().getX() -todaysDate.getLocation().getX();
-//			int yOffset=nextTwoDays.get(0).getLocation().getY() -todaysDate.getLocation().getY();
-//			
-//			
-//			actions.moveByOffset(xOffset, yOffset).perform();
-//			
-//			xOffset=nextTwoDays.get(1).getLocation().getX()- todaysDate.getLocation().getX();
-//			yOffset=nextTwoDays.get(1).getLocation().getY()- todaysDate.getLocation().getX();
-//			
-//			actions.moveByOffset(xOffset, yOffset).perform();
-			
-//			for(int i=0;i<2;i++) {
-//				actions.moveToElement(nextTwoDays.get(i)).perform();
-//				Thread.sleep(500);
-//			}
-//			actions.release().perform();
-//			
-//			
-			
-			
+
 		}catch(Exception e) {
 			e.printStackTrace();
 			
