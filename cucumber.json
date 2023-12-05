@@ -1,0 +1,152 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8932000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the home page",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_am_on_the_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-12-05T19:28:26.020Z",
+        "line": 22,
+        "name": "Option to book room",
+        "description": "",
+        "id": "book-a-room;option-to-book-room;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 107000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I browse through the page",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_browse_through_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 268000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I have the option to book a room",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.i_have_the_option_to_book_a_room()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 355000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click book this room",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.user_click_book_this_room()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2701000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enter the \"TestAutomation1\" \"TestAutomation1\" \"testautom@gmail.com\" and \"+32467689396\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation1",
+                  "offset": 16
+                },
+                {
+                  "val": "TestAutomation1",
+                  "offset": 34
+                },
+                {
+                  "val": "testautom@gmail.com",
+                  "offset": 52
+                },
+                {
+                  "val": "+32467689396",
+                  "offset": 78
+                }
+              ],
+              "location": "features.step_definitions.BookingSteps.user_enter_the_and(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 777000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User select the booking date two nights",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.user_select_the_booking_date_nights()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user click on book",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.user_click_on_book()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10191000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify booking detils",
+            "match": {
+              "location": "features.step_definitions.BookingSteps.verify_booking_detils()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@book"
+          }
+        ]
+      }
+    ],
+    "name": "Book a room",
+    "description": "",
+    "id": "book-a-room",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/booking.feature",
+    "tags": []
+  }
+]
